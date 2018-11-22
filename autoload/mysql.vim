@@ -1,6 +1,6 @@
 function! mysql#GetSystemCommand(user, password, host, database, command)
     let l:user = '-u' . a:user . ' '
-    let l:password = '-p' . a:password . ' '
+    let l:password = '--password=' . a:password . ' '
     let l:host = '-h' . a:host . ' '
     let l:database = ''
 
